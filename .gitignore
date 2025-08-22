@@ -1,0 +1,27 @@
+# Python virtual environment
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large Models
+models/sentiment_rf_model.pkl
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Sentiment Classifier</title>
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <h1>Twitter Sentiment Classifier</h1>
+        <p class="subtitle">Enter a tweet to classify its sentiment (Positive, Negative, or Neutral)</p>
+
+        <!-- Form to input tweet -->
+        <form method="POST">
+            <textarea name="tweet" placeholder="Type your tweet here..." required>{{ user_input }}</textarea>
+            <div class="buttons">
+                <button type="submit">Predict Sentiment</button>
+                <button type="button" onclick="clearForm()">Clear</button>
+            </div>
+        </form>
+
+        <!-- Show result only if sentiment is predicted -->
+        {% if sentiment %}
+        <div class="result">
+            <h2>Predicted Sentiment:</h2>
+            <span class="badge {{ sentiment|lower }}">{{ sentiment }}</span>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- JS function to clear text & remove result -->
+    <script>
+        function clearForm() {
+            document.querySelector("textarea").value = "";
+            document.querySelector(".result")?.remove();
+        }
+    </script>
+</body>
+</html>

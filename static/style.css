@@ -1,0 +1,145 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean sans-serif font */
+    background: linear-gradient(135deg, #fff5eb, #fef9f9, #f4ecf7); /* Warm pastel gradient */
+    color: #2d3436; /* Text color */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Center container */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: 400% 400%;
+    animation: gradientShift 14s ease infinite; /* Animate gradient */
+}
+
+/* Gradient background animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main container */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* White with transparency */
+    padding: 40px;
+    border-radius: 18px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1); /* Soft shadow */
+    transition: 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15); /* Stronger shadow on hover */
+}
+
+/* Title styles */
+h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #6c3483; /* Deep purple */
+}
+
+/* Subtitle text */
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #7f8c8d; /* Grey tone */
+}
+
+/* Input area (tweet box) */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+    background: #fefefe;
+    color: #2d3436;
+    transition: 0.2s ease;
+}
+
+/* Highlight input on focus */
+textarea:focus {
+    border: 1px solid #ff9f43;
+    box-shadow: 0 0 6px rgba(255, 159, 67, 0.3);
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* General button styles */
+button {
+    flex: 1;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Predict button */
+button[type="submit"] {
+    background: linear-gradient(135deg, #ff9f43, #e67e22);
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #d35400, #ba4a00);
+}
+
+/* Clear button */
+button[type="button"] {
+    background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+}
+
+button[type="button"]:hover {
+    background: linear-gradient(135deg, #7f8c8d, #636e72);
+}
+
+/* Result box */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #fdf2e9;
+    border: 1px solid #f5cba7;
+}
+
+/* Sentiment badges */
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Sentiment-specific colors */
+.badge.positive {
+    background: #48c9b0; /* Teal */
+    color: #fff;
+}
+
+.badge.neutral {
+    background: #f5b041; /* Amber */
+    color: #fff;
+}
+
+.badge.negative {
+    background: #e74c3c; /* Coral red */
+    color: #fff;
+}
