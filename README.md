@@ -1,8 +1,6 @@
 # Twitter Sentiment Classifier
 
-[![Python](httpsimg.shields.iobadgePython-blue)](httpswww.python.org)
-[![Flask](httpsimg.shields.iobadgeFlask-green)](httpsflask.palletsprojects.com)
-[![Machine Learning](httpsimg.shields.iobadgeML-Random%20Forest-orange)](httpsscikit-learn.orgstablemodulesensemble.html#random-forests)
+[![Python](https://img.shields.io/badge/Python-blue)](https://www.python.org) [![Flask](https://img.shields.io/badge/Flask-green)](https://flask.palletsprojects.com) [![Machine Learning](https://img.shields.io/badge/ML-Random%20Forest-orange)](https://scikit-learn.org/stable/modules/ensemble.html#random-forests)
 
 ---
 
@@ -30,7 +28,7 @@ The project is designed with clean UIUX using HTML and CSS to make sentiment ana
 twitter-sentiment-classifier
 │
 ├── models
-│   ├── sentiment_rf_model.pkl       # Pre-trained Random Forest model
+│   ├── sentiment_rf_model.pkl       # Pre-trained Random Forest model (not included in repo due to size; see notebook to generate)
 │   └── tfidf_vectorizer.pkl         # TF-IDF vectorizer
 │
 ├── data
@@ -71,7 +69,7 @@ source venvbinactivate
 
 ```bash
 python -m venv venv
-venvScriptsactivate
+venv\Scripts\activate
 ```
 
 3. Install dependencies
@@ -102,13 +100,15 @@ python app.py
 
 ## Technologies Used
 
- Python 3
- Flask for web framework
- scikit-learn for machine learning
- pandas and numpy for data manipulation
- nltk for natural language processing
- matplotlib and seaborn for visualization
- HTMLCSS for frontend design
+## Technologies Used
+
+- **Python 3** – Programming language used for backend and ML model  
+- **Flask** – Web framework for serving the application  
+- **scikit-learn** – Machine learning library for training the Random Forest model  
+- **pandas** and **numpy** – Data manipulation and numerical computation  
+- **NLTK** – Natural language processing (text cleaning and preprocessing)  
+- **matplotlib** and **seaborn** – Data visualization  
+- **HTML & CSS** – Frontend design for clean and responsive UI
 
 ---
 
@@ -142,8 +142,11 @@ Badges are styled using CSS for immediate visual feedback
 📧 Contact
 For questions, suggestions, or collaborations, feel free to reach out
 
- GitHub [tayyabalitech](httpsgithub.comtayyabalitech)
- LinkedIn [tayyabalitech](httpswww.linkedin.comintayyabalitech)
- Email [tayyabalitechpro@gmail.com](mailtotayyabalitechpro@gmail.com)
+📧 Contact  
+For questions, suggestions, or collaborations, feel free to reach out  
+
+GitHub: [tayyabalitech](https://github.com/tayyabalitech)  
+LinkedIn: [tayyabalitech](https://www.linkedin.com/in/tayyabalitech)  
+Email: [tayyabalitechpro@gmail.com](mailto:tayyabalitechpro@gmail.com)
 
 ## Made with ❤️ by Tayyab Ali
