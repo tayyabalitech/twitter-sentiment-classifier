@@ -58,7 +58,7 @@ cd twitter-sentiment-classifier
 
 2. Create a virtual environment (optional but recommended)
 
- For LinuxmacOS
+ For Linux/macOS
 
 ```bash
 python -m venv venv
@@ -100,8 +100,6 @@ python app.py
 
 ## Technologies Used
 
-## Technologies Used
-
 - **Python 3** – Programming language used for backend and ML model  
 - **Flask** – Web framework for serving the application  
 - **scikit-learn** – Machine learning library for training the Random Forest model  
@@ -137,13 +135,10 @@ Badges are styled using CSS for immediate visual feedback
 
 ---
 
-## Contact
+## 📧 Contact
 
-📧 Contact
 For questions, suggestions, or collaborations, feel free to reach out
 
-📧 Contact  
-For questions, suggestions, or collaborations, feel free to reach out  
 
 GitHub: [tayyabalitech](https://github.com/tayyabalitech)  
 LinkedIn: [tayyabalitech](https://www.linkedin.com/in/tayyabalitech)  
